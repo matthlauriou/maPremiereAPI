@@ -1,0 +1,33 @@
+{
+  "cars" : [ {
+    "id" : 2,
+    "brand" : "Peugeot",
+    "model" : "308",
+    "color" : "Rouge"
+  }, {
+    "id" : 3,
+    "brand" : "Peugeot",
+    "model" : "3008",
+    "color" : "Grise"
+  }, {
+    "id" : 4,
+    "brand" : "Renault",
+    "model" : "Zoé",
+    "color" : "Violette"
+  }, {
+    "id" : 5,
+    "brand" : "Citroën",
+    "model" : "C3",
+    "color" : "Noire"
+  }, {
+    "id" : 6,
+    "brand" : "Renault",
+    "model" : "Megane",
+    "color" : "Vert"
+  }, {
+    "id" : 99,
+    "brand" : null,
+    "model" : "Porsche",
+    "color" : null
+  } ]
+}
