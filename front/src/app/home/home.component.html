@@ -1,0 +1,27 @@
+<div>
+    <h1>Gestion des Voitures</h1>
+
+    <app-menu></app-menu>
+
+    <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Marque</th>
+            <th>Modèle</th>
+            <th>Couleur</th>
+            <th>#</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let voiture of voitures">
+            <td>{{ voiture.id }}</td>
+            <td>{{ voiture.marque }}</td>
+            <td>{{ voiture.modele }}</td>
+            <td>{{ voiture.couleur }}</td>
+            <td>{{ voiture.couleur }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>
