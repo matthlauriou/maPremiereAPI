@@ -10,10 +10,14 @@ public class CarDao {
     private String brand;
     private String model;
     private String color;
+    private String energy;
+    private Integer price;
 
     public void update(CarDao that) {
         this.setBrand(that.getBrand());
         this.setModel(that.getModel());
         this.setColor(that.getColor());
+        this.setEnergy(that.getEnergy());
+        this.setPrice(that.getPrice());
     }
 }
