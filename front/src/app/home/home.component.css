@@ -1,2 +1,46 @@
+/* Rendre le tableau réactif */
+.table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Ajouter une barre de défilement horizontale si nécessaire */
+  @media (max-width: 600px) {
+    table {
+      width: 100%;
+    }
+  }
 
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2px 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
+  .ml5px {
+    margin-left: 5px;
+  }
+
+  .success {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  

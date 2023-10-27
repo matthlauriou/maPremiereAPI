@@ -1,0 +1,30 @@
+<div>
+    <h1>Modifier une Voiture</h1>
+
+    <app-menu></app-menu>
+
+    <form>   
+        <div>
+        <label for="Marque">Marque:</label>
+        <input type="text" id="marque" name="marque" [(value)]="voiture.marque" required>
+        </div>
+    
+        <div>
+        <label for="Modele">Modèle:</label>
+        <input type="text" id="modele" name="modele" [(value)]="voiture.modele" required>
+        </div>
+    
+        <div>
+        <label for="Couleur">Couleur:</label>
+        <input type="text" id="couleur" name="couleur" [(value)]="voiture.couleur" required>
+        </div>
+    
+        <button type="submit" (click)="onSubmit($event)">Modifier</button>
+    </form>
+
+    <!-- Paragraphe de succès -->
+    <p *ngIf="successMessage" class="success">{{ successMessage }}</p>
+
+    <!-- Paragraphe d'erreur -->
+    <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+</div>

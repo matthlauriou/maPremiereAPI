@@ -3,25 +3,36 @@
 
     <app-menu></app-menu>
 
-    <table>
-        <thead>
-          <tr>
-            <th>id</th>
-            <th>Marque</th>
-            <th>Modèle</th>
-            <th>Couleur</th>
-            <th>#</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let voiture of voitures">
-            <td>{{ voiture.id }}</td>
-            <td>{{ voiture.marque }}</td>
-            <td>{{ voiture.modele }}</td>
-            <td>{{ voiture.couleur }}</td>
-            <td>{{ voiture.couleur }}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="table-responsive">
+        <table>
+            <thead>
+            <tr>
+                <th>id</th>
+                <th>Marque</th>
+                <th>Modèle</th>
+                <th>Couleur</th>
+                <th>#</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let voiture of voitures">
+                <td>{{ voiture.id }}</td>
+                <td>{{ voiture.marque }}</td>
+                <td>{{ voiture.modele }}</td>
+                <td>{{ voiture.couleur }}</td>
+                <td>
+                    <button class="button" (click)="naviguerDetail(voiture.id)"><mat-icon class="custom-icon">search</mat-icon></button>
+                    <button class="button ml5px" (click)="naviguerModification(voiture.id)"><mat-icon class="custom-icon">edit</mat-icon></button>
+                    <button class="button ml5px" (click)="confirmerSuppression(voiture.id)"><i class="material-icons">delete</i></button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
+    <!-- Paragraphe de succès -->
+    <p *ngIf="successMessage" class="success">{{ successMessage }}</p>
+
+    <!-- Paragraphe d'erreur -->
+    <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
 </div>
